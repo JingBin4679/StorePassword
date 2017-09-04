@@ -5,7 +5,7 @@ android {
         release {
             keyAlias 'starcor.com'
             keyPassword 'jb666888'
-            storeFile file('/app/doc/key.jks')
+            storeFile file('/doc/key.jks')
             storePassword 'jb666888'
         }
         debug {

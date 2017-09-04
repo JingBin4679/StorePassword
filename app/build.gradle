@@ -9,10 +9,6 @@ android {
             storePassword 'jb666888'
         }
         debug {
-            keyAlias 'starcor.com'
-            keyPassword 'jb666888'
-            storeFile file('/app/doc/key.jks')
-            storePassword 'jb666888'
         }
     }
     compileSdkVersion 25
@@ -33,9 +29,9 @@ android {
     }
     productFlavors {
         yingyongbao {
-            minSdkVersion 22
-            applicationId 'com.starcor.evs'
-            targetSdkVersion 22
+            signingConfig signingConfigs.release
+        }
+        baidu {
             signingConfig signingConfigs.release
         }
     }
